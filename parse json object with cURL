@@ -1,0 +1,42 @@
+<?php
+
+
+$url = 'http://...';
+
+$cURL = curl_init();
+
+curl_setopt($cURL, CURLOPT_URL, $url); //could've set it in one line butt...
+curl_setopt($cURL, CURLOPT_HTTPGET, true); // set _GET: not REALLY necessary
+
+curl_setopt($cURL, CURLOPT_HTTPHEADER, array(  ///set our header info
+    'Content-Type: application/json',
+    'Accept: application/json'
+));
+
+$result = curl_exec($cURL);
+
+curl_close($cURL);
+
+
+
+print_r($result);
+
+/* example output
+
+{
+    "open": false,
+    "manager": "stien",
+    "date": 20141212,
+    "desc": "this is some kind of fund",
+    "buy": 1000000000
+}
+
+*/
+
+//or get specific results
+
+echo $result['manager'];
+
+
+
+?>
