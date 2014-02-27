@@ -1,0 +1,189 @@
+/* transitions */
+
+/*creative transit:*/
+
+a {
+    -moz-transition: all 0.2s linear 0.1s;
+    -webkit-transition: all 0.2s linear 0.1s;
+    -o-transition: all 0.2s linear 0.1s;
+    transition: all 0.2s linear 0.1s;
+}
+
+
+/* extended transitions even more with isotope  */
+
+.isotope, .isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:         top, left, opacity;
+    transition-property:         transform, opacity;
+
+    -webkit-transition-property: top, left, opacity;
+    -moz-transition-property: top, left, opacity;
+    -ms-transition-property: top, left, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: top, left, opacity;
+}
+
+/*stien eriksen*/
+
+#homes-overview.amber-animate-init .left-col,.turbo #homes-overview.amber-animate-init .right-col,.turbo #condos-overview.amber-animate-init .image-title,.turbo #condos-overview.amber-animate-init .left-col,.turbo #condos-overview.amber-animate-init .right-col{
+	
+	opacity:0;
+	-webkit-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+	-webkit-transform:translateY(-100%);
+	-moz-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	-o-transform:translateY(-100%);
+	transform:translateY(-100%)
+	}
+
+	.turbo #homes-overview.amber-animate-in .right-arrows-container,.turbo #condos-overview.amber-animate-in .right-arrows-container{
+	opacity:1;
+	-webkit-transform:translateX(0);
+	-moz-transform:translateX(0);
+	-ms-transform:translateX(0);
+	-o-transform:translateX(0);
+	transform:translateX(0)
+	}
+
+	.turbo #homes-site-map.amber-animate-init .home,.turbo #homes-site-map.amber-animate-init .condo,.turbo #condos-site-map.amber-animate-init .home,.turbo #condos-site-map.amber-animate-init .condo{
+	-webkit-transition:opacity 0.3s ease;
+	transition:opacity 0.3s ease;
+	opacity:0
+	}
+	.turbo #homes-site-map.amber-animate-init .home-01,.turbo #condos-site-map.amber-animate-init .home-01{
+	-webkit-transition-delay:118.75ms;
+	transition-delay:118.75ms;
+	}
+	
+	.turbo #homes-site-map.amber-animate-init .home-02,.turbo #condos-site-map.amber-animate-init .home-02{
+	-webkit-transition-delay:137.5ms;
+	transition-delay:137.5ms
+	}
+#ser-landing .lockup{margin-top:60px}
+	}
+	@keyframes skier{0%,40%{transform:rotate(0deg)}
+	60%,100%{transform:rotate(360deg)}
+	}
+	@-webkit-keyframes skier{0%,40%{-webkit-transform:rotate(0deg)}
+	60%,100%{-webkit-transform:rotate(360deg)}
+	}
+	@-moz-keyframes skier{0%,40%{-moz-transform:rotate(0deg)}
+	60%,100%{-moz-transform:rotate(360deg)}
+	}
+	@-o-keyframes skier{0%,40%{-o-transform:rotate(0deg)}
+	60%,100%{-o-transform:rotate(360deg)}
+	}
+	@keyframes spin{0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+	}
+	@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg)}
+	}
+	@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)}
+	100%{-moz-transform:rotate(360deg)}
+	}
+	@-o-keyframes spin{0%{-o-transform:rotate(0deg)}
+	100%{-o-transform:rotate(360deg)}
+	}
+	@keyframes scroll-down-bounce{0%,30%{transform:translateY(0px)}
+	65%{transform:translateY(30px)}
+	100%{transform:translateY(0px)}
+	}
+	@-webkit-keyframes scroll-down-bounce{0%,30%{-webkit-transform:translateY(0px)}
+	65%{-webkit-transform:translateY(30px)}
+	100%{-webkit-transform:translateY(0px)}
+	}
+	@-moz-keyframes scroll-down-bounce{0%,30%{-moz-transform:translateY(0px)}
+	65%{-moz-transform:translateY(30px)}
+	100%{-moz-transform:translateY(0px)}
+	}
+	@-o-keyframes scroll-down-bounce{0%,30%{-o-transform:translateY(0px)}
+	65%{-o-transform:translateY(30px)}
+	100%{-o-transform:translateY(0px)}
+	}
+
+	/* navigation using custom data attribute */
+
+
+	<ul class="nav navbar-nav">
+			<li id="nav-home" class="menu-item brand"><a class="navbar-brand" data-target="#ser-landing" href="http://steineriksenresidences.com/">
+				<img class="front svg-img" src="http://steineriksenresidences.com/img/min/SER.svg" height="38" />
+				<img class="svg-img back" src="http://steineriksenresidences.com/img/min/skier-hex.svg" width="38" height="38" />
+			</a></li>
+			<li id="nav-vision" class="menu-item"><a data-target="#ser-vision" href="http://steineriksenresidences.com/#vision"><span data-title="Vision">Vision</span></a></li>
+			<li id="nav-homes" class="menu-item"><a data-target="#ser-homes" href="http://steineriksenresidences.com/#homes"><span data-title="Homes">Homes</span></a></li>
+			<li id="nav-condos" class="menu-item"><a data-target="#ser-condos" href="http://steineriksenresidences.com/#condos"><span data-title="Condos">Condominiums</span></a></li>
+			<li id="nav-ski-out-ski-in" class="menu-item"><a data-target="#ser-ski-out-ski-in" href="http://steineriksenresidences.com/#ski-out-ski-in"><span data-title="Ski-out / Ski-in">Ski-out / Ski-in</span></a></li>
+			<li id="nav-amenities" class="menu-item"><a data-target="#ser-amenities" href="http://steineriksenresidences.com/#amenities"><span data-title="Amenities / Services">Amenities / Services</span></a></li>
+			<li id="nav-location" class="menu-item"><a data-target="#ser-location" href="http://steineriksenresidences.com/#location"><span data-title="Location">Location</span></a></li>
+			<li id="nav-contact" class="menu-item"><a data-target="#ser-stay-informed" href="http://steineriksenresidences.com/#contact"><span data-title="Contact">Contact</span></a></li>
+		</ul>
+
+/* html5 section element, form elements, some svg */
+<section id="ser-stay-informed" class="text-light amber-animate-section">
+	<image class="svg-img section-connect top" src="http://steineriksenresidences.com/img/min/section-connect-light-gray-top.svg" width="100" height="28" />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="skier">
+					<img class="svg-img" src="http://steineriksenresidences.com/img/min/skier-plack.svg" width="320" height="178" />
+				</div>
+				<div class="image-title">
+					<img class="svg-img" src="http://steineriksenresidences.com/img/min/our-legacy.svg" width="1053" height="73" />
+				</div>
+				<div class="title-rule">
+					<img class="svg-img" src="http://steineriksenresidences.com/img/min/ski-difficulties.svg" width="60" height="11" />
+				</div>
+									<div class="contact-phone text-center text-uppercase">
+						Sales Gallery Appointments: <span class="mobile-link phone-number" data-number="4352435773">435.243.5773</span>
+					</div>
+							</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+<form id="general-form" class="form-inline" role="form" method="POST" action="http://steineriksenresidences.com/submit/default">
+					<input type="hidden" name="_token" value="EOjpgqrjYxWa3cCm5arfuHheBja78BoJOnitoaN1">
+					<div class="form-group">
+						<label class="sr-only" for="name">Name</label>
+						<input class="ser-input form-control" type="text" id="name" name="name" placeholder="NAME..." required />
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="email">Email</label>
+						<input class="ser-input form-control" type="email" id="email" name="email" placeholder="EMAIL..." required />
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="phone">Phone</label>
+						<input class="ser-input phone form-control" type="tel" id="phone" name="phone" placeholder="PHONE..." />
+					</div>
+					<button type="submit" class="btn btn-default ser-submit ga-submit"><span>REQUEST INFORMATION</span></button>
+					<a data-toggle="modal" id="realtors-btn" class="" href="#brokerInquiries">FOR REALTORS</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<div id="contact-reminder">
+	<img class="svg-img" src="http://steineriksenresidences.com/img/min/request-information.svg" src="http://steineriksenresidences.com/img/min/request-information.png" width="25" height="200" />
+</div>
+
+
+
+	
