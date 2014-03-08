@@ -1,0 +1,22 @@
+$(function() {
+    var json = {
+        "frames": {
+            "frame": [{
+                "name": "mcelroy",
+                "order": 3,
+                "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas, lectus in rutrum porttitor, tortor augue vestibulum libero, a cursus tellus diam id velit. Nam faucibus at urna blandit molestie. Sed vehicula, turpis in facilisis lobortis, lorem nibh blandit erat, a lobortis orci dui id sem. Vivamus egestas condimentum volutpat. Morbi hendrerit imperdiet justo at eleifend. Vestibulum et lobortis velit, et tincidunt augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam elementum quam varius, malesuada massa sed, tincidunt neque. Morbi ac nisi ullamcorper, gravida turpis at, congue est. Morbi feugiat interdum iaculis.",
+                "youtube": "wderfefejnol"},
+            {
+                "name": "zara",
+                "order": 15,
+                "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas, lectus in rutrum porttitor, tortor augue vestibulum libero, a cursus tellus diam id velit. Nam faucibus at urna blandit molestie. Sed vehicula, turpis in facilisis lobortis, lorem nibh blandit erat, a lobortis orci dui id sem. Vivamus egestas condimentum volutpat. Morbi hendrerit imperdiet justo at eleifend. Vestibulum et lobortis velit, et tincidunt augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam elementum quam varius, malesuada massa sed, tincidunt neque. Morbi ac nisi ullamcorper, gravida turpis at, congue est. Morbi feugiat interdum iaculis.",
+                "youtube": "wfetigrldv"}]
+        }
+    };
+    $.each(json.frames.frame, function(i, v) {
+        if (v.name == "zara") {
+            alert(v.order+v.copy);
+            return;
+        }
+    });
+});
